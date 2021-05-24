@@ -1,4 +1,4 @@
-# Continual Learning Through Retrieval and Imagination
+# Deep Retrieval and Imagination (DRI)
 
 ## 📋Dependence
 
