@@ -68,11 +68,11 @@ Werkzeug==1.0.0
 
 We compare DRI against six rehearsal-based methods (ER, GEM, A-GEM, GSS, FDR, HAL), one pseudo-rehearsal-based method (CL-GAN), three methods leveraging Knowledge Distillation (LwF, iCaRL, DER) and two parameter-based methods (oEWC, SI). We further provide an upper bound (JOINT) obtained by training all tasks jointly and a lower bound simply performing SGD without any countermeasure to forgetting.
 
-![Table1](./data/results/table1.png)
+![Table1](./data/DRI.png)
 
-![Table2](./data/results/table2.png)
+![Table2](./data/Figure1.png)
 
-![Figure1](./data/results/Figure4.png)
+![Figure1](./data/results/table1.png)
 
 - 
   First, we compare the performance in terms of overall accuracy at the end of all tasks, shown in Table 1. Results are averaged across ten runs, each one involving a different initialization. DRI achieves state-of-the-art performance in almost all setting. Especially in the case of small memory, the advantage of DRI is more obvious, e.g., DRI can reduce the classification error by more than 5% on Tiny ImageNet with 200 memory capacity. This is supported by IGAN providing additional imaginary data to alleviate the memory-limitation problem. The gap is unbridgeable when comparing with oEWC and SI, which indicates that the regularization towards old parameters is not effective in preventing forgetting. CL-GAN's performance on complex datasets, i.e., CIFAR and Tiny ImageNet, degrades significantly due to its difficulty in generating complex and clear images. Appendix C provides more detailed results.
